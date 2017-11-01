@@ -3,10 +3,8 @@
   .main__form-wrapper {
     max-width: 890px;
     height: 290px;
-    margin-right: 22px; //34px;
-    margin-left: 22px; //34px; 
-    // padding-left: 4px;
-    // padding-right: 4px;
+    // margin-right: 22px; //34px;
+    margin-left: 44px; //34px; 
     .main__form {
       height: 142px;
       border: 1px solid #dcdcdc;
@@ -81,10 +79,11 @@
     }
     .main__details-wrapper {
       max-width: 890px;
-      margin-right: 22px; 
-      margin-left: 22px;
-      padding-right: 22px; 
-      padding-left: 22px;
+      margin-left: 44px; 
+      // margin-right: 22px; 
+      // margin-left: 22px;
+      // padding-right: 22px; 
+      // padding-left: 22px;
       height: 74px;
       display: flex;
       justify-content: center;
