@@ -66,13 +66,16 @@
   .header {
     height: 80px;
     background: #2a2a2a;
+    .header__bg {
+      background: #2a2a2a;
+    }
     .header__showMenu {
       display: block !important;
     }
     .header__mobile {
       height: 80px;
       display: flex;
-      justify-content: space-around;
+      justify-content: space-between;
       align-items: center;
       // background-color: #2a2a2a;
       .header__company {
@@ -104,7 +107,6 @@
     background-color: #2a2a2a;
     position: relative;
     z-index: 10;
-    top: -1px;
     height: 200px;
     padding-top: 2%;
     ul {
