@@ -85,7 +85,6 @@
       margin-left: 22px;
       padding-right: 22px; 
       padding-left: 22px;
-
       height: 74px;
       display: flex;
       justify-content: center;
@@ -94,7 +93,6 @@
       position: relative;
       top: 50%;
       transform: translateY(-50%);
-
       .main__details-img {
         position: absolute;
         top: 50%;
@@ -152,6 +150,26 @@
         }
         select {
           background-position-x: 96%;
+        }
+      }
+    }
+
+    .main__details {
+      height: 275px;
+      .main__details-height {
+        height: 275px;
+      }
+      .main__details-wrapper {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        .main__details-img {
+          display: none;
+        }
+        h4, > div {
+          width: 100%;
+          margin-right: 0;
+          padding-left: 0;
+          margin-bottom: 18px;
         }
       }
     }
