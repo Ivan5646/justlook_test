@@ -1,0 +1,61 @@
+.header {
+  margin-bottom: 72px;
+  // background-color: #222222;
+  background: -moz-radial-gradient(center, ellipse cover, rgba(105,105,105,1) 0%, rgba(0,0,0,1) 100%); /* ff3.6+ */
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(105,105,105,1)), color-stop(100%, rgba(0,0,0,1))); /* safari4+,chrome */
+  background:-webkit-radial-gradient(center, ellipse cover, rgba(105,105,105,1) 0%, rgba(0,0,0,1) 100%); /* safari5.1+,chrome10+ */
+  background: -o-radial-gradient(center, ellipse cover, rgba(105,105,105,1) 0%, rgba(0,0,0,1) 100%); /* opera 11.10+ */
+  background: -ms-radial-gradient(center, ellipse cover, rgba(105,105,105,1) 0%, rgba(0,0,0,1) 100%); /* ie10+ */
+  background:radial-gradient(ellipse at center, rgba(105,105,105,1) 0%, rgba(0,0,0,1) 100%); /* w3c */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#696969', endColorstr='#000000',GradientType=1 ); /* ie6-9 */
+
+  height: 114px;
+  font-size: 18px;
+  ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 114px;
+    li {
+      position: relative;
+      list-style-type: none;
+      margin-right: auto;
+
+      a {
+        color: white;
+      }
+    }
+    .header__company {
+      font-family: 'RobotoBold', sans-serif;
+      font-size: 20px;
+      a {
+        display: inline-block;
+        width: inherit;
+        background-image: url("../../img/checkers.svg"); 
+        background-repeat: no-repeat;
+        background-position: 0 5px;
+        padding-left: 60px;
+      }
+    }
+    li:nth-child(2){
+      margin-left: auto;
+    }
+    li:last-child {
+      margin-right: 0;
+      a {
+        color: #838383;
+      }
+    }
+    li.active a {
+      color: #f4c116;
+    }
+    li.active::after {
+      content: " ";
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: -48px;
+      border-bottom: 8px solid #f4c116;
+    }
+  }
+}

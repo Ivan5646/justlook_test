@@ -1,0 +1,1 @@
+$(document).ready(function(){$(".header ul li").on("click",function(){$(".header ul li").each(function(i,t){var a=$(t);"active"==a.attr("class")&&a.removeClass("active")}),$(this).is(":last-child")||$(this).is(":first-child")||$(this).toggleClass("active")})});

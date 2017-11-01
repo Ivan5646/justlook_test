@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Taxi Test</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.css">
+  <link rel="stylesheet" href="styles/layout.css">
+  <link rel="stylesheet" href="styles/blocks/header.css">
+  <link rel="stylesheet" href="styles/blocks/main.css">
+  <link rel="stylesheet" href="styles/blocks/footer.css">
+</head>	
+
+<body>
+<header class="header">
+  <div class="container">
+    <ul>
+      <li class="header__company"><a href="#">ВжухТакси</a></li>
+      <li><a href="#">Сводка</a></li>
+      <li class="active"><a href="#">Вывод средств</a></li>
+      <li><a href="#">Операции</a></li>
+      <li><a href="#">Выход</a></li>
+    </ul>
+  </div>
+</header>
+<section class="main">
+  <div class="container">
+    <div class="main__form-wrapper"> 
+      <form action="" class="main__form">
+        <div class="main__pointer"></div>
+        <h4>Вывести средства</h4>
+        <select class="main__selectTaxi">
+          <option value="yandexTaxometr">Яндекс.Таксометр</option>
+          <option value="RBT">РБТ</option>
+        </select>
+        <input type="text" placeholder="Сумма, рублей">
+        <button>Вывести средства</button>
+      </form>
+    </div>
+  </div>
+  <div class="main__details">
+    <div class="container main__details-height">
+      <div class="main__details-wrapper"> 
+        <div class="main__details-img"></div>
+        <h4>Ваши рекзвизиты</h4>
+        <div>
+          <p class="main__details-name">Номер карты</p>
+          <p>1852 **** **** 4521</p>
+        </div>
+        <div>
+          <p class="main__details-name">Название банка</p>
+          <p>МежТопЭнерго Банк</p>
+        </div>
+        <div>
+          <p class="main__details-name">Номер счета</p>
+          <p>40817810055760515502</p>
+        </div>
+        </div>
+    </div>
+  </div>
+</section>
+<footer class="footer">
+  <div class="container">
+    <ul>
+      <li class="footer__address"><a href="#">000000, Шир, г. Хоббитон, д. 12</a></li>
+      <li class="footer__phone"><a href="#">+7 (000) 1111-000</a></li>
+      <li class="footer__mail"><a href="#">mail@vjuh-taxi.ru</a></li>
+    </ul>
+  </div>
+</footer>
+
+	
+<script src="js/vendors/jquery3-2-1.js"></script>
+<script src="js/all-min.js"></script>
+
+</body>
+</html>
