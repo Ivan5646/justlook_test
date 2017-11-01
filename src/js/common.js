@@ -22,7 +22,6 @@ $(document).ready(function(){
 
   // toogle mobile menu
   $(".header .header__hamburger").on("click", function(event){
-    console.log("clicked");
     $(".header .header__ul-wrapper").toggleClass("header__showMenu");
     // if(!event.target.matches(".header ul")){
     //   console.log("oustide the menu");
