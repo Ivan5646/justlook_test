@@ -10,6 +10,9 @@
 
   height: 114px;
   font-size: 18px;
+  .header__mobile {
+    display: none;
+  }
   ul {
     display: flex;
     justify-content: space-between;
@@ -55,6 +58,37 @@
       right: 0;
       bottom: -48px;
       border-bottom: 8px solid #f4c116;
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .header {
+    .header__mobile {
+      display: block;
+      .header__company {
+        font-family: 'RobotoBold', sans-serif;
+        font-size: 20px;
+        a {
+          display: inline-block;
+          width: inherit;
+          background-image: url("../../img/checkers.svg"); 
+          background-repeat: no-repeat;
+          background-position: 0 5px;
+          padding-left: 60px;
+          color: #ffffff;
+        }
+      }
+    }
+  }
+  ul {
+    flex-direction: column;
+    justify-content: center;
+    .header__company {
+      display: none;
+    }
+    li {
+      margin: 0 !important;
     }
   }
 }
