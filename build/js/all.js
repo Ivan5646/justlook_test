@@ -19,4 +19,14 @@ $(document).ready(function(){
       // console.log(this.innerText);
     }
   })
+
+  // toogle mobile menu
+  $(".header .header__hamburger").on("click", function(event){
+    $(".header ul").toggleClass("header__showMenu");
+    // if(!event.target.matches(".header ul")){
+    //   console.log("oustide the menu");
+    // }
+  });
+
+
 });

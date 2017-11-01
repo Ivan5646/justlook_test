@@ -64,8 +64,15 @@
 
 @media only screen and (max-width: 768px) {
   .header {
+    height: 80px;
+    .header__showMenu {
+      display: block !important;
+    }
     .header__mobile {
-      display: block;
+      height: 80px;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
       .header__company {
         font-family: 'RobotoBold', sans-serif;
         font-size: 20px;
@@ -79,9 +86,19 @@
           color: #ffffff;
         }
       }
+      .header__hamburger {
+        width: 40px;
+        height: 36px;
+        background-color: #ffffff;
+        background-image: url("../../img/hamburger.png");
+        background-repeat: no-repeat;
+        background-position: center; //10px 8px;
+        background-size: 46%;
+      }
     }
   }
   ul {
+    display: none !important;
     flex-direction: column;
     justify-content: center;
     .header__company {
