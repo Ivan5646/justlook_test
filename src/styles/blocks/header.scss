@@ -65,6 +65,7 @@
 @media only screen and (max-width: 768px) {
   .header {
     height: 80px;
+    background: #2a2a2a;
     .header__showMenu {
       display: block !important;
     }
@@ -73,6 +74,7 @@
       display: flex;
       justify-content: space-around;
       align-items: center;
+      // background-color: #2a2a2a;
       .header__company {
         font-family: 'RobotoBold', sans-serif;
         font-size: 20px;
@@ -97,15 +99,40 @@
       }
     }
   }
-  ul {
-    display: none !important;
-    flex-direction: column;
-    justify-content: center;
-    .header__company {
-      display: none;
-    }
-    li {
-      margin: 0 !important;
+  .header__ul-wrapper {
+    background-color: #2a2a2a;
+    position: relative;
+    z-index: 10;
+    top: -1px;
+    height: 200px;
+    ul {
+      display: none !important;
+      flex-direction: column;
+      justify-content: center;
+      position: relative;
+      // top: -1px;
+      z-index: 9;
+      width: 24%;
+      margin: 0 auto;
+      .header__company {
+        display: none;
+      }
+      li {
+        // margin: 0 !important;
+        margin-right: 0 !important;
+        margin-left: 0 !important;
+        text-align: center;
+        margin-bottom: 30px;
+        a {
+
+        }
+      }
+      li.active::after {
+        left: 0;
+        right: 0;
+        bottom: -5px;
+        border-bottom: 2px solid #f4c116;
+      }
     }
   }
 }
