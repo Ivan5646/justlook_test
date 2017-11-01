@@ -100,13 +100,13 @@
     }
   }
   .header__ul-wrapper {
+    display: none !important;
     background-color: #2a2a2a;
     position: relative;
     z-index: 10;
     top: -1px;
     height: 200px;
     ul {
-      display: none !important;
       flex-direction: column;
       justify-content: center;
       position: relative;
@@ -114,6 +114,7 @@
       z-index: 9;
       width: 24%;
       margin: 0 auto;
+      height: inherit;
       .header__company {
         display: none;
       }
