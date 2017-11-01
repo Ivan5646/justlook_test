@@ -17,6 +17,15 @@ mailbox 23 16
 19 14
 
 
+scope
+- select arrow at tablet width
+IE
+- doube select arrow at smaller width (does it matter?)
+- footer and main overlap each other
+Firefox
+- select arrow style
+
+
 
 heager gradient
   background: -moz-radial-gradient(center, ellipse cover, rgba(105,105,105,1) 0%, rgba(0,0,0,1) 100%); /* ff3.6+ */

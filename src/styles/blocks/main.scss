@@ -45,12 +45,19 @@
 
         background: url("../../img/selectArrow.svg") no-repeat right;
         -webkit-appearance: none;
-        background-position-x: 196px;
+        background-position-x: 96%; //190px;
         option {
           height: 45px;
           &:first-child {
             background-color: #e4e4e4;
           }
+        }
+        @-moz-document url-prefix() {
+          // background: none;
+          -moz-appearance: none;
+          background-image: url("../../img/selectArrow.svg");
+          background-repeat: no-repeat;
+          background-position: 94% 18px;
         }
       }
       // select.main__selectTaxi option:hover { 
