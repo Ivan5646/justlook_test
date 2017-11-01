@@ -2,6 +2,7 @@
   font-size: 16px;
   .main__form-wrapper {
     max-width: 890px;
+    height: 290px;
     margin-right: 22px; //34px;
     margin-left: 22px; //34px; 
     // padding-left: 4px;
@@ -15,6 +16,8 @@
     align-items: center;
     flex-wrap: wrap;
     position: relative;
+    top: 50%;
+    transform: translateY(-50%);
     .main__pointer {
       position: absolute;
       top: 50%;
