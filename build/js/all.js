@@ -21,21 +21,16 @@ $(document).ready(function(){
   })
 
   // toogle mobile menu
+  var ulWrapper = $(".header .header__ul-wrapper");
+
   $(".header .header__hamburger").on("click", function(event){
-    $(".header .header__ul-wrapper").toggleClass("header__showMenu");
-  });
-  // var header = document.getElementsByClassName("header");
-  $("body").on("click", function(event){
-    if( $(event.target).is($(".header")) ){
-      var myTarget = JSON.stringify($(event.target));
-      console.log("oustide the menu "+ myTarget);
-    }
+    ulWrapper.toggleClass("header__showMenu");
   });
   // hide the menu if clicked outside
   $(document).click(function(event) { 
     if(!$(event.target).closest(".header").length) {
-      if($(".header").is(":visible")) {
-        $(".header .header__ul-wrapper").toggleClass("header__showMenu");
+      if(ulWrapper.is(":visible")) {
+        ulWrapper.toggleClass("header__showMenu");
       }
     }        
   });
