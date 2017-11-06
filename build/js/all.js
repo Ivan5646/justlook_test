@@ -23,10 +23,21 @@ $(document).ready(function(){
   // toogle mobile menu
   $(".header .header__hamburger").on("click", function(event){
     $(".header .header__ul-wrapper").toggleClass("header__showMenu");
-    // if(!event.target.matches(".header ul")){
-    //   console.log("oustide the menu");
-    // }
   });
-
+  // var header = document.getElementsByClassName("header");
+  $("body").on("click", function(event){
+    if( $(event.target).is($(".header")) ){
+      var myTarget = JSON.stringify($(event.target));
+      console.log("oustide the menu "+ myTarget);
+    }
+  });
+  // hide the menu if clicked outside
+  $(document).click(function(event) { 
+    if(!$(event.target).closest(".header").length) {
+      if($(".header").is(":visible")) {
+        $(".header .header__ul-wrapper").toggleClass("header__showMenu");
+      }
+    }        
+  });
 
 });
