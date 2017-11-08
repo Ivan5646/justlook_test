@@ -23,9 +23,23 @@ $(document).ready(function(){
   // toogle mobile menu
   var ulWrapper = $(".header .header__ul-wrapper");
 
-  $(".header .header__hamburger").on("click", function(event){
-    ulWrapper.toggleClass("header__showMenu");
+  // $(".header .header__hamburger").on("click", function(event){
+  //   ulWrapper.toggleClass("header__showMenu");
+  // });
+
+  $(".header .header__hamburger").click(function(event) {
+       if(ulWrapper.hasClass("header__showMenu")) {
+       ulWrapper.slideUp(300, function() { 
+         ulWrapper.removeClass("header__showMenu");
+      });
+      } else {
+        ulWrapper.hide().slideDown(300, function() { // effect does not work
+           ulWrapper.addClass("header__showMenu"); 
+        });
+      }
   });
+
+
   // hide the menu if clicked outside
   $(document).click(function(event) { 
     if(!$(event.target).closest(".header").length) {

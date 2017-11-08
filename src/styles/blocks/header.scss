@@ -67,7 +67,7 @@
     height: 80px;
     background: #2a2a2a;
     .header__bg {
-      background: #2a2a2a;
+      // background: #2a2a2a;
     }
     .header__showMenu {
       display: block !important;
@@ -103,6 +103,9 @@
     }
   }
   .header__ul-wrapper {
+    //.contanier
+
+
     display: none !important;
     background-color: #2a2a2a;
     position: relative;
