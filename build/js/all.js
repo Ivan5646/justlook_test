@@ -37,13 +37,13 @@ $(document).ready(function(){
       }
     });
   
-
-
   // hide the menu if clicked outside
   $(document).click(function(event) { 
     if(!$(event.target).closest(".header").length) {
       if(ulWrapper.is(":visible")) {
-        ulWrapper.toggleClass("header__showMenu");
+        ulWrapper.slideUp(300);
+        setTimeout(function(){ ulWrapper.removeClass("header__showMenu"); }, 300);
+        // ulWrapper.removeClass("header__showMenu");
       }
     }        
   });
