@@ -16,6 +16,8 @@ mailbox 23 16
 
 19 14
 
+starting effects
+
 
 scope
 - select arrow at tablet width
