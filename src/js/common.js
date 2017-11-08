@@ -33,7 +33,7 @@ $(document).ready(function(){
         ulWrapper.removeClass("header__showMenu");
       });
       } else {
-        ulWrapper.addClass("header__showMenu").slideDown(300);
+        ulWrapper.addClass("header__showMenu").slideUp(1).slideDown(300);
       }
     });
   
