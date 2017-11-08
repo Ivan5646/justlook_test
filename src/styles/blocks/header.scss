@@ -73,6 +73,8 @@
       display: block !important;
     }
     .header__mobile {
+      padding-left: 16px; // .container
+      padding-right: 16px; // .container
       height: 80px;
       display: flex;
       justify-content: space-between;
@@ -103,9 +105,8 @@
     }
   }
   .header__ul-wrapper {
-    //.contanier
-
-
+    padding-left: 16px; // .container
+    padding-right: 16px; // .container
     display: none !important;
     background-color: #2a2a2a;
     position: relative;

@@ -49,4 +49,9 @@ $(document).ready(function(){
     }        
   });
 
+  // remove .header .container
+  if( $(window).width() < 768 ){
+    $(".header > div:first-child").removeClass("container");
+  }
+
 });
