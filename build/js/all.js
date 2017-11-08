@@ -28,16 +28,15 @@ $(document).ready(function(){
   // });
 
   $(".header .header__hamburger").click(function(event) {
-       if(ulWrapper.hasClass("header__showMenu")) {
-       ulWrapper.slideUp(300, function() { 
-         ulWrapper.removeClass("header__showMenu");
+    if(ulWrapper.hasClass("header__showMenu")) {
+      ulWrapper.slideUp(300, function() { 
+        ulWrapper.removeClass("header__showMenu");
       });
       } else {
-        ulWrapper.hide().slideDown(300, function() { // effect does not work
-           ulWrapper.addClass("header__showMenu"); 
-        });
+        ulWrapper.addClass("header__showMenu").slideDown(300);
       }
-  });
+    });
+  
 
 
   // hide the menu if clicked outside
