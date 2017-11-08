@@ -49,9 +49,18 @@ $(document).ready(function(){
     }        
   });
 
-  // remove .header .container
+  // remove .header .container on moible
   if( $(window).width() < 768 ){
     $(".header > div:first-child").removeClass("container");
   }
+
+  $(window).resize(function() {
+    if( $(window).width() < 768 ){
+      $(".header > div:first-child").removeClass("container");
+    } else if ($(window).width() > 768 ) {
+      $(".header > div:first-child").addClass("container");
+    }
+  });
+
 
 });
