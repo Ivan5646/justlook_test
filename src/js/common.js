@@ -45,9 +45,10 @@ $(document).ready(function(){
   // });
 
   // 4. transition, add class
+  var headerUl = $(".header ul");
   $(".header .header__hamburger").click(function(){
-    $(".header ul").addClass("header__transition").toggleClass("header__menuShow");
-    setTimeout(function(){ $(".header ul").removeClass("header__transition"); }, 3000);
+    headerUl.addClass("header__transition").toggleClass("header__menuShow");
+    setTimeout(function(){ headerUl.removeClass("header__transition"); }, 3000);
   });
 
 
@@ -62,19 +63,5 @@ $(document).ready(function(){
   //     }
   //   }        
   // });
-
-  // remove .header .container on moible
-  // if( $(window).width() < 768 ){
-  //   $(".header > div:first-child").removeClass("container");
-  // }
-
-  // $(window).resize(function() {
-  //   if( $(window).width() < 768 ){
-  //     $(".header > div:first-child").removeClass("container");
-  //   } else if ($(window).width() > 768 ) {
-  //     $(".header > div:first-child").addClass("container");
-  //   }
-  // });
-
 
 });
