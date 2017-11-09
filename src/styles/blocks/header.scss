@@ -10,8 +10,12 @@
 
   height: 114px;
   font-size: 18px;
-  .header__showMenu {
-    // display: block;
+  .header__container {
+    max-width: 934px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 16px;
+    padding-right: 16px;
   }
   .header__mobile {
     display: none;
@@ -69,11 +73,10 @@
   .header {
     height: 80px;
     background: #2a2a2a;
-    .header__bg {
-      // background: #2a2a2a;
-    }
-    .header__showMenu {
-      // display: none;
+    .header__container {
+      padding-left: 0;
+      padding-right: 0;
+      height: inherit;
     }
     .header__mobile {
       padding-left: 16px; // .container
@@ -112,7 +115,7 @@
       background-color: #2a2a2a;
       position: relative;
       z-index: 10;
-      padding-top: 2%;
+      // padding-top: 2%;
       flex-direction: column;
       justify-content: center;
       position: relative;
