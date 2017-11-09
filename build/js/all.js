@@ -46,21 +46,21 @@ $(document).ready(function(){
 
   // 4. transition, add class
   $(".header .header__hamburger").click(function(){
-    ulWrapper.toggleClass("header__ul-wrapperShow");
+    $(".header ul").toggleClass("header__menuShow");
   });
 
 
   
   // hide the menu if clicked outside
-  $(document).click(function(event) { 
-    if(!$(event.target).closest(".header").length) {
-      if(ulWrapper.is(":visible")) {
-        ulWrapper.slideUp(300);
-        setTimeout(function(){ ulWrapper.removeClass("header__showMenu"); }, 300);
-        // ulWrapper.removeClass("header__showMenu");
-      }
-    }        
-  });
+  // $(document).click(function(event) { 
+  //   if(!$(event.target).closest(".header").length) {
+  //     if(ulWrapper.is(":visible")) {
+  //       ulWrapper.slideUp(300);
+  //       setTimeout(function(){ ulWrapper.removeClass("header__showMenu"); }, 300);
+  //       // ulWrapper.removeClass("header__showMenu");
+  //     }
+  //   }        
+  // });
 
   // remove .header .container on moible
   if( $(window).width() < 768 ){

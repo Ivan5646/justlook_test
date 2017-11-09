@@ -34,7 +34,8 @@ Firefox
 - select arrow style
 
 Problems
-- menu dissapperrin
+- menu dissapperrin. Solved
+- Using transition for mobile menu child element is visible with height: 0;
 - media queries and resize px are not the same. Just change class properties in css with media quieries?
 
 heager gradient
