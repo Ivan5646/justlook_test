@@ -110,11 +110,11 @@
   .header__ul-wrapper {
     padding-left: 16px; // .container
     padding-right: 16px; // .container
-    display: none; //opacity: 0; 
+    //display: none; //opacity: 0; 
     background-color: #2a2a2a;
     position: relative;
     z-index: 10;
-    height: 200px;
+    height: 0px; //height: 200px;
     padding-top: 2%;
     ul {
       flex-direction: column;
@@ -161,9 +161,14 @@
     display: none;
   }
   .header__ul-wrapperShow { 
-    display: block;
+    //display: block;
+    // max-height: 200px;
+    // transition-duration: 49s;
+    // transition-timing-function: ease-in;
+
+    position: relative;
+    overflow: hidden;
     height: 200px;
-    transition-duration: 0.3s;
-    transition-timing-function: ease-in;
+    transition: height 1.35s ease;
   }
 }

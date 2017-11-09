@@ -20,7 +20,9 @@ starting effects
 
 
 http://jsfiddle.net/chrisramakers/8ewEp/  animate opacity dropdown
-https://jsfiddle.net/ProLoser/nurx8/   slide down up
+transition slide down up
+https://jsfiddle.net/ProLoser/nurx8/   
+http://jsfiddle.net/9ht6R/
 
 
 scope
