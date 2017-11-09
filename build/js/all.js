@@ -21,47 +21,20 @@ $(document).ready(function(){
   })
 
   // toogle mobile menu
-  var ulWrapper = $(".header .header__ul-wrapper");
-
-  // 1
-  // $(".header .header__hamburger").on("click", function(event){
-  //   ulWrapper.toggleClass("header__showMenu");
-  // });
-
-  // 2
-  // $(".header .header__hamburger").click(function(event) {
-  //   if(ulWrapper.hasClass("header__showMenu")) {
-  //     ulWrapper.slideUp(300, function() { 
-  //       ulWrapper.removeClass("header__showMenu");
-  //     });
-  //     } else {
-  //       ulWrapper.addClass("header__showMenu").slideUp(1).slideDown(300);
-  //     }
-  //   });
-
-  // 3. animation
-  // $(".header .header__hamburger").click(function(){
-  //   ulWrapper.animate({opacity: "1"});
-  // });
-
-  // 4. transition, add class
   var headerUl = $(".header ul");
   $(".header .header__hamburger").click(function(){
     headerUl.addClass("header__transition").toggleClass("header__menuShow");
     setTimeout(function(){ headerUl.removeClass("header__transition"); }, 3000);
   });
-
-
   
-  // hide the menu if clicked outside
-  // $(document).click(function(event) { 
-  //   if(!$(event.target).closest(".header").length) {
-  //     if(ulWrapper.is(":visible")) {
-  //       ulWrapper.slideUp(300);
-  //       setTimeout(function(){ ulWrapper.removeClass("header__showMenu"); }, 300);
-  //       // ulWrapper.removeClass("header__showMenu");
-  //     }
-  //   }        
-  // });
+  // hide the menu if clicked outside ssd
+  $(document).click(function(event) {
+    if(!$(event.target).closest(".header").length) {
+      if( headerUl.hasClass("header__menuShow") ) {
+        headerUl.addClass("header__transition").toggleClass("header__menuShow");
+        setTimeout(function(){ headerUl.removeClass("header__transition"); }, 3000);
+      }
+    }
+  });
 
 });

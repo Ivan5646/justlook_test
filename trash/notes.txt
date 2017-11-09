@@ -35,9 +35,13 @@ Firefox
 - select arrow style
 
 Problems
+- if the menu was opened after resizing it is opening again
+
+
+Problems Solved
 - menu dissapperrin. Solved
-- Using transition for mobile menu child element is visible with height: 0;
-- media queries and resize px are not the same. Just change class properties in css with media quieries?
+- Using transition for mobile menu child element is visible with height: 0; overflow:hidden
+- media queries and resize px are not the same. Just change class properties in css with media quieries? Yes
 
 heager gradient
   background: -moz-radial-gradient(center, ellipse cover, rgba(105,105,105,1) 0%, rgba(0,0,0,1) 100%); /* ff3.6+ */
