@@ -10,6 +10,9 @@
 
   height: 114px;
   font-size: 18px;
+  .header__showMenu {
+    // display: block;
+  }
   .header__mobile {
     display: none;
   }
@@ -70,7 +73,7 @@
       // background: #2a2a2a;
     }
     .header__showMenu {
-      display: block !important;
+      // display: none;
     }
     .header__mobile {
       padding-left: 16px; // .container
@@ -107,7 +110,7 @@
   .header__ul-wrapper {
     padding-left: 16px; // .container
     padding-right: 16px; // .container
-    display: none !important;
+    opacity: 0; // display: none;
     background-color: #2a2a2a;
     position: relative;
     z-index: 10;

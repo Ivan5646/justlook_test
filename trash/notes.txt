@@ -18,6 +18,9 @@ mailbox 23 16
 
 starting effects
 
+animate opacity dropdown
+http://jsfiddle.net/chrisramakers/8ewEp/
+
 
 scope
 - select arrow at tablet width
@@ -27,7 +30,9 @@ IE
 Firefox
 - select arrow style
 
-
+Problems
+- menu dissapperrin
+- media queries and resize px are not the same. Just change class properties in css with media quieries?
 
 heager gradient
   background: -moz-radial-gradient(center, ellipse cover, rgba(105,105,105,1) 0%, rgba(0,0,0,1) 100%); /* ff3.6+ */
