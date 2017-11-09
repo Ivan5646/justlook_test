@@ -40,8 +40,13 @@ $(document).ready(function(){
   //   });
 
   // 3. animation
+  // $(".header .header__hamburger").click(function(){
+  //   ulWrapper.animate({opacity: "1"});
+  // });
+
+  // 4. transition, add class
   $(".header .header__hamburger").click(function(){
-    ulWrapper.animate({opacity: "1"});
+    ulWrapper.toggleClass("header__ul-wrapperShow");
   });
 
 

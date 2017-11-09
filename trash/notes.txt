@@ -18,8 +18,9 @@ mailbox 23 16
 
 starting effects
 
-animate opacity dropdown
-http://jsfiddle.net/chrisramakers/8ewEp/
+
+http://jsfiddle.net/chrisramakers/8ewEp/  animate opacity dropdown
+https://jsfiddle.net/ProLoser/nurx8/   slide down up
 
 
 scope
