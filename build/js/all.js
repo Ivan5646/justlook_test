@@ -46,7 +46,8 @@ $(document).ready(function(){
 
   // 4. transition, add class
   $(".header .header__hamburger").click(function(){
-    $(".header ul").toggleClass("header__menuShow");
+    $(".header ul").addClass("header__transition").toggleClass("header__menuShow");
+    setTimeout(function(){ $(".header ul").removeClass("header__transition"); }, 3000);
   });
 
 
