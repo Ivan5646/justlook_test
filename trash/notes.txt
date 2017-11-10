@@ -16,7 +16,7 @@ mailbox 23 16
 
 19 14
 
-starting effects
+starting effects, merged
 
 
 http://jsfiddle.net/chrisramakers/8ewEp/  animate opacity dropdown
