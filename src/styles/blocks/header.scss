@@ -29,7 +29,6 @@
       position: relative;
       list-style-type: none;
       margin-right: auto;
-
       a {
         color: white;
       }
@@ -57,6 +56,15 @@
     }
     li.active a {
       color: #f4c116;
+      transition: color 0.3s;
+    }
+    li::after {
+      content: " ";
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: -48px;
+      border-bottom: 8px solid transparent;
     }
     li.active::after {
       content: " ";
@@ -65,6 +73,7 @@
       right: 0;
       bottom: -48px;
       border-bottom: 8px solid #f4c116;
+      transition: border 0.3s;
     }
   }
 }
