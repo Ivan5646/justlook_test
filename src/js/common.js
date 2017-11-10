@@ -32,6 +32,9 @@ $(document).ready(function(){
   // hide the menu if clicked outside
   $(document).click(function(event) {
     if(!$(event.target).closest(".header").length) {
+      if ( $(".header .header__hamburger").hasClass("header__hamburger_open") ) {
+        $(".header .header__hamburger").toggleClass("header__hamburger_open");
+      }
       if( headerUl.hasClass("header__menuShow") ) {
         headerUl.addClass("header__transition").toggleClass("header__menuShow");
         setTimeout(function(){ headerUl.removeClass("header__transition"); }, 3000);
