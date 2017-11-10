@@ -22,12 +22,13 @@ $(document).ready(function(){
 
   // toogle mobile menu
   var headerUl = $(".header ul");
+  
   $(".header .header__hamburger").click(function(){
     headerUl.addClass("header__transition").toggleClass("header__menuShow");
     setTimeout(function(){ headerUl.removeClass("header__transition"); }, 3000);
   });
   
-  // hide the menu if clicked outside ssd
+  // hide the menu if clicked outside
   $(document).click(function(event) {
     if(!$(event.target).closest(".header").length) {
       if( headerUl.hasClass("header__menuShow") ) {
