@@ -24,6 +24,7 @@ $(document).ready(function(){
   var headerUl = $(".header ul");
   
   $(".header .header__hamburger").click(function(){
+    $(this).toggleClass("header__hamburger_open");
     headerUl.addClass("header__transition").toggleClass("header__menuShow");
     setTimeout(function(){ headerUl.removeClass("header__transition"); }, 3000);
   });
