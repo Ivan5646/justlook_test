@@ -27,12 +27,16 @@ http://jsfiddle.net/gionaf/zvEmX/
 
 
 scope
+
 - select arrow at tablet width
 IE
 - doube select arrow at smaller width (does it matter?)
 - footer and main overlap each other
 Firefox
 - select arrow style
+
+Done
+- hamburger top 10px, bottom 9px centering. Increased heigth to 1px
 
 Problems
 - if the menu was opened after resizing it is opening again
